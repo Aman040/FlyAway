@@ -5,9 +5,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Source Destination</title>
+<style>
+label{
+font-size: 30px;
+}
+option{
+font-size: 20px;
+}
+</style>
 </head>
 <body>
-	<label>Source</label>
+	<label>Sources</label>
 	<select id="source" name="source">
 		<option></option>
 		<option value="Bangalore">Bangalore</option>
@@ -19,7 +27,7 @@
 		<option value="Nagpur">Nagpur</option>
 		<option value="Goa">Goa</option>
 	</select>
-	<label>Destination</label>
+	<label>Destinations</label>
 	<select id="destination" name="destination">
 		<option></option>
 		<option value="Bangalore">Bangalore</option>

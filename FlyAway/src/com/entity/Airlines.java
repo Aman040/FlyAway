@@ -30,11 +30,10 @@ public class Airlines {
 		this.airline = airline;
 		this.price = price;
 	}
-	 @OneToMany(cascade = CascadeType.ALL)
+/*	 @OneToMany(cascade = CascadeType.ALL)
 	    @JoinTable(
-	            name = "master_table",
-	            joinColumns = @JoinColumn(name = "id"),
-	            inverseJoinColumns = @JoinColumn(name = "flight_id")
+	            name = "Master",
+	            joinColumns = @JoinColumn(name = "id")
 	    )
 	private List<Flights> flights;
 
@@ -44,7 +43,7 @@ public class Airlines {
 	}
 	public void setFlights(List<Flights> flights) {
 		this.flights = flights;
-	}
+	}*/
 	public int getId() {
 		return id;
 	}

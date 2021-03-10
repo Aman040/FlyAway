@@ -11,7 +11,6 @@ import javax.persistence.Table;
 @Table(name="FlightDetail")
 public class Flights {
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="flight_id")
 	private int id;
 	@Column(name="source")
@@ -25,6 +24,18 @@ public class Flights {
 	public Flights() {
 		super();
 	}
+
+
+	public Flights(int id) {
+		super();
+		this.id = id;
+	}
+
+
+
+
+
+
 	public Flights(String source, String destination, int travellers, String date) {
 		super();
 		this.source = source;

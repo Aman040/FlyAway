@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 import com.entity.Airlines;
 import com.entity.Flights;
@@ -75,6 +76,16 @@ public class Confrimation extends HttpServlet {
 				out.print("</tr>");
 				out.print("</table>");
 				request.getRequestDispatcher("PaymentConfirmation.html").include(request, response);
+				Session del=HiberanteUtlity.getSession();
+				Transaction  tc=del.beginTransaction();
+				
+				for(Flights f: fdetails) {
+					out.print("hello:");
+					Flights flight=new Flights(f.getId());
+					del.delete(flight);
+					
+				}
+				tc.commit();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

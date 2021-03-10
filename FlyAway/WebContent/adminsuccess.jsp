@@ -9,6 +9,9 @@
 button {
 	poition:relative;
 }
+input{
+font-size: 30px;
+}
 </style>
 </head>
 <body>
@@ -17,6 +20,6 @@ button {
  <h2 style="text-align: center;"> <%= session.getAttribute("uname") %> </h2><br><br><br>
  <input type="button" onclick="document.location.href='source_destination_list.jsp'" value="List Source & Destination" style="color: red; width: 415px; height: 300px;">
  <input type="button" onclick="document.location.href='airline_list.jsp'" value="List Airlines" style="color: red; width: 495px; height: 300px;">
- <input type="button" onclick="document.location.href='flight_details.jsp'" value="List Flight Details" style="color: red; width: 415px; height: 300px;">
+ <input type="button" onclick="document.location.href='flight-details.jsp'" value="List Flight Details" style="color: red; width: 415px; height: 300px;">
 </body>
 </html>

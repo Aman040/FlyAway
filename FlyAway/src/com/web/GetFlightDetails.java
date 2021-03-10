@@ -41,13 +41,14 @@ public class GetFlightDetails extends HttpServlet {
 		Session session=HiberanteUtlity.getSession();
 		List<Flights> fdetails=session.createQuery("from Flights").list();
 		List<Airlines> bdetails=session.createQuery("from Airlines").list();
-		out.print("<h2 style='text-indent:5em';>   Booking Details </h2>");
+		out.print("<h2 style='text-indent:25em';>   Booking Details </h2>");
 		out.print("<style> table,td,th {" 
 							+ "border:2px solid gray;" 
 							+ "padding: 10px; "
 							+ "}</style>");	
 		out.print("<style>th{background-color: #4287f5;\r\n" + 
 				" color: white; }</style>");
+		out.print("<style> table{ margin-left: auto;\r\n" + "  margin-right: auto;}</style>");
 		out.print("<table>");
 		out.print("<tr>");
 		out.print("<th> Source </th>");
@@ -87,7 +88,7 @@ public class GetFlightDetails extends HttpServlet {
 			e.printStackTrace();
 		}
 		out.print("<br>");
-		out.print("<input type=\"button\" onclick=\"document.location.href='Confrimation'\" value=\"Confirm Booking\" style=\"color:white; background-color: #4287f5;  width: 150px; margin-left:100px;\">");
+		out.print("<input type=\"button\" onclick=\"document.location.href='Confrimation'\" value=\"Confirm Booking\" style=\"color:white; background-color: #4287f5;  width: 150px; margin-left:560px;\">");
 	}
 
 	

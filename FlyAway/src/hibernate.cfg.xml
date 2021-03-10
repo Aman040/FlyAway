@@ -29,6 +29,7 @@
 		<mapping class="com.entity.Users"/>
 		<mapping class="com.entity.Airlines"/>
 		
+		
        
  
     </session-factory>

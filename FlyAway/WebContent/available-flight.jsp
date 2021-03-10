@@ -6,8 +6,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Get Avilable Flights</title>
+<style type="text/css">
+a{
+font-size: "20px";
+color: red;
+}
+</style>
 </head>
 <body>
+<h3>
+<a href="index.html">Home</a> 
+</h3>
 <fieldset style="background-color: powderblue;" >
 <legend style="text-align: center; "><h1>Flight Details</h1></h2></legend>
 <form method="post" action="AvilableFlights">
@@ -20,7 +29,6 @@
 <option value="4"><p>Indigo   -</p><p> 4500.00</p></option>
 <option value="5"><p>Vistara  -</p><p> 7000.00</p></option>
 <option value="6"><p>AirAsia  -</p><p> 4800.00</p></option>
-
 </select>
 <button value="submit">Submit</button>
 </form>

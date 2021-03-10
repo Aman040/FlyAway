@@ -2,7 +2,6 @@ package com.utility;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;
-
 import com.entity.Airlines;
 import com.entity.Flights;
 import com.entity.Users;
