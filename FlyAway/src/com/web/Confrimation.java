@@ -80,7 +80,6 @@ public class Confrimation extends HttpServlet {
 				Transaction  tc=del.beginTransaction();
 				
 				for(Flights f: fdetails) {
-					out.print("hello:");
 					Flights flight=new Flights(f.getId());
 					del.delete(flight);
 					
